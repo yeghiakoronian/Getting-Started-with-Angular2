@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Logger} from 'angular2-logger/core'
+import {Logger} from 'angular2-logger/core';
 
 
 @Component({
@@ -8,6 +8,7 @@ import {Logger} from 'angular2-logger/core'
         <div>
             <h1>{{pageTitle}}</h1>
             <pm-products></pm-products>
+            <logger-app></logger-app>
         </div>
     `
 })

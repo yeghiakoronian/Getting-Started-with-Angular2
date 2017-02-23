@@ -64,10 +64,6 @@ export class ProductListComponent {
             }
     ];
 
-         constructor( private _logger: Logger )
-    {
-        this._logger.error('in ProductListComponent');
-    }
 
     toggleImage(): void {
        
