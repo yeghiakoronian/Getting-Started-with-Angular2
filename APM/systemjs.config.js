@@ -24,12 +24,16 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 
       // other libraries
-      'rxjs': 'npm:rxjs'
+      'rxjs': 'npm:rxjs',
+      'angular2-logger': 'node_modules/angular2-logger' 
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
       app: {
         main: './main.js',
+        defaultExtension: 'js',
+      },
+      'angular2-logger': { 
         defaultExtension: 'js'
       },
       rxjs: {

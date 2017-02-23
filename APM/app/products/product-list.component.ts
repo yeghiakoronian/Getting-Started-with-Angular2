@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import {Logger} from 'angular2-logger/core';
 
 @Component ({
     selector: 'pm-products',
@@ -63,7 +64,13 @@ export class ProductListComponent {
             }
     ];
 
+         constructor( private _logger: Logger )
+    {
+        this._logger.error('in ProductListComponent');
+    }
+
     toggleImage(): void {
+       
         this.showImage = !this.showImage;
     }
 }

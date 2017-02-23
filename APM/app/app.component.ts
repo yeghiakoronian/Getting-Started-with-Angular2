@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Logger} from 'angular2-logger/core'
+
 
 @Component({
     selector: 'pm-app',
@@ -11,4 +13,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent { 
     pageTitle: string = 'Yeghia Product Management';
+
+    constructor( private _logger: Logger )
+    {
+        this._logger.info('in AppComponent');
+    }
 }
