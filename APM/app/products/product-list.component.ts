@@ -1,6 +1,8 @@
 import { Component} from '@angular/core';
 import {Logger} from 'angular2-logger/core';
 
+import {LoggerService} from '../logger-service';
+
 @Component ({
     selector: 'pm-products',
     templateUrl: 'app/products/product-list.component.html'
@@ -64,9 +66,13 @@ export class ProductListComponent {
             }
     ];
 
+    constructor( private logger: LoggerService)
+    {
+             this.logger.log.error('error here');
+    }
 
     toggleImage(): void {
-       
+       this.logger.log.info('Toggle pressed ');
         this.showImage = !this.showImage;
     }
 }

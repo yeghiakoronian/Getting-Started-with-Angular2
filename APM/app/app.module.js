@@ -11,6 +11,7 @@ var app_component_1 = require("./app.component");
 var product_list_component_1 = require("./products/product-list.component");
 var logger_app_component_1 = require("./test/logger-app.component");
 var core_2 = require("angular2-logger/core");
+var logger_service_1 = require("./logger-service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -25,7 +26,7 @@ AppModule = __decorate([
             logger_app_component_1.LoggerAppComponent
         ],
         bootstrap: [app_component_1.AppComponent],
-        providers: [core_2.Logger]
+        providers: [logger_service_1.LoggerService, core_2.Logger]
     })
 ], AppModule);
 exports.AppModule = AppModule;
