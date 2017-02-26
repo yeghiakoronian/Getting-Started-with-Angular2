@@ -9,9 +9,9 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var product_list_component_1 = require("./products/product-list.component");
-var logger_app_component_1 = require("./test/logger-app.component");
+var logger_app_component_1 = require("./logging/logger-app.component");
 var core_2 = require("angular2-logger/core");
-var logger_service_1 = require("./logger-service");
+var logger_service_1 = require("./logging/logger-service");
 var AppModule = (function () {
     function AppModule() {
     }

@@ -14,7 +14,6 @@ var AppComponent = (function () {
     function AppComponent(_logger) {
         this._logger = _logger;
         this.pageTitle = 'Yeghia Product Management';
-        this._logger.info('in AppComponent');
     }
     return AppComponent;
 }());

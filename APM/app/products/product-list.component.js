@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var logger_service_1 = require("../logger-service");
+var logger_service_1 = require("../logging/logger-service");
 var ProductListComponent = (function () {
     function ProductListComponent(logger) {
         this.logger = logger;
@@ -69,7 +69,6 @@ var ProductListComponent = (function () {
                 "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
             }
         ];
-        this.logger.log.error('error here');
     }
     ProductListComponent.prototype.toggleImage = function () {
         this.logger.log.info('Toggle pressed ');

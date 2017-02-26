@@ -3,11 +3,6 @@ import 'rxjs/add/operator/map';
 import *  as Config from './config';
 import {Logger, Level} from "angular2-logger/core";
 
-/*
-  Generated class for the LoggerService provider.
-  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
-  for more info on providers and Angular 2 DI.
-*/
 @Injectable()
 export class LoggerService {
 
