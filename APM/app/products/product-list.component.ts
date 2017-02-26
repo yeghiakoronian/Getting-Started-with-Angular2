@@ -1,8 +1,7 @@
 import { Component} from '@angular/core';
 import {Logger} from 'angular2-logger/core';
-
 import {LoggerService} from '../logging/logger-service';
-
+import {IProduct} from './product';
 @Component ({
     selector: 'pm-products',
     templateUrl: 'app/products/product-list.component.html'
@@ -14,7 +13,7 @@ export class ProductListComponent {
     imageMargin: number = 2;
     listFilter : string = 'cart';
     showImage: boolean = false;
-    products: any[] = [
+    products: IProduct[] = [
             {
                 "productId": 1,
                 "productName": "Leaf Rake",
