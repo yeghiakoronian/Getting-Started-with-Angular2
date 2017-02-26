@@ -84,4 +84,8 @@ export class ProductListComponent implements OnInit{
     {
         this.logger.log.info('On Init called')
     }
+
+    onRatingClicked(message: string){
+        this.pageTitle = 'Product List: ' + message;    
+    }
 }
