@@ -14,6 +14,7 @@ var logger_app_component_1 = require("./logging/logger-app.component");
 var core_2 = require("angular2-logger/core");
 var logger_service_1 = require("./logging/logger-service");
 var product_filter_pipe_1 = require("./products/product-filter.pipe");
+var star_component_1 = require("./shared/star.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -29,7 +30,8 @@ AppModule = __decorate([
             app_component_1.AppComponent,
             product_list_component_1.ProductListComponent,
             logger_app_component_1.LoggerAppComponent,
-            product_filter_pipe_1.ProductFilterPipe
+            product_filter_pipe_1.ProductFilterPipe,
+            star_component_1.StarComponent
         ],
         providers: [
             logger_service_1.LoggerService,
