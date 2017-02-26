@@ -13,6 +13,7 @@ var product_list_component_1 = require("./products/product-list.component");
 var logger_app_component_1 = require("./logging/logger-app.component");
 var core_2 = require("angular2-logger/core");
 var logger_service_1 = require("./logging/logger-service");
+var product_filter_pipe_1 = require("./products/product-filter.pipe");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,7 +28,8 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent,
             product_list_component_1.ProductListComponent,
-            logger_app_component_1.LoggerAppComponent
+            logger_app_component_1.LoggerAppComponent,
+            product_filter_pipe_1.ProductFilterPipe
         ],
         providers: [
             logger_service_1.LoggerService,

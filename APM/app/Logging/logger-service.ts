@@ -11,14 +11,11 @@ export class LoggerService {
   constructor(public logger: Logger) {
     this.log = this.logger;
     // Set the log level using the config value
-    if(Number(localStorage.getItem("angular2.logger.level")))
-    {
+    if(Number(localStorage.getItem("angular2.logger.level"))){
       this.logger.level = Number(localStorage.getItem("angular2.logger.level"));      
     }   
-    else
-    {
-      switch(Config.data.LogLevel) 
-      {
+    else{
+      switch(Config.data.LogLevel){
         case "OFF":
           this.log.level = this.logger.Level.OFF;
           break;

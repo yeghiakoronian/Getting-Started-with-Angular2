@@ -8,6 +8,7 @@ import {ProductListComponent} from './products/product-list.component'
 import {LoggerAppComponent} from './logging/logger-app.component'
 import { Logger } from "angular2-logger/core";
 import {LoggerService} from './logging/logger-service';
+import {ProductFilterPipe} from './products/product-filter.pipe'
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import {LoggerService} from './logging/logger-service';
   declarations: [ 
     AppComponent,
     ProductListComponent ,
-    LoggerAppComponent
+    LoggerAppComponent,
+    ProductFilterPipe
   ],
   providers: [ 
     LoggerService,
