@@ -75,6 +75,9 @@ var ProductListComponent = (function () {
         this.logger.log.info('Toggle pressed ');
         this.showImage = !this.showImage;
     };
+    ProductListComponent.prototype.ngOnInit = function () {
+        this.logger.log.info('On Init called');
+    };
     return ProductListComponent;
 }());
 ProductListComponent = __decorate([

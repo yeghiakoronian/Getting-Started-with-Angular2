@@ -1,14 +1,16 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {Logger} from 'angular2-logger/core';
 import {LoggerService} from '../logging/logger-service';
 import {IProduct} from './product';
+
+
 @Component ({
     selector: 'pm-products',
     templateUrl: 'app/products/product-list.component.html',
     styleUrls: ['app/products/product-list.component.css']
 })
 
-export class ProductListComponent {
+export class ProductListComponent implements OnInit{
     pageTitle: string = 'Product List';
     imageWidth: number = 50;
     imageMargin: number = 2;
@@ -67,10 +69,18 @@ export class ProductListComponent {
             }
     ];
 
-    constructor( private logger: LoggerService) {}
+    constructor( private logger: LoggerService) {
+        
+    }
 
-    toggleImage(): void {
+    toggleImage(): void 
+    {
        this.logger.log.info('Toggle pressed ');
         this.showImage = !this.showImage;
+    }
+
+    ngOnInit(): void 
+    {
+        this.logger.log.info('On Init called')
     }
 }
