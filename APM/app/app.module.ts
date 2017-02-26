@@ -28,3 +28,4 @@ import {ProductFilterPipe} from './products/product-filter.pipe'
   bootstrap: [ AppComponent ],
 })
 export class AppModule { }
+//
