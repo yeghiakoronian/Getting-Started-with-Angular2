@@ -8,7 +8,6 @@ import {LoggerService} from './logging/logger-service';
         <div>
             <h1>{{pageTitle}}</h1>
             <pm-products></pm-products>
-            <logger-app></logger-app>
         </div>
     `
 })

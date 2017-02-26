@@ -20,7 +20,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'pm-app',
-        template: "\n        <div>\n            <h1>{{pageTitle}}</h1>\n            <pm-products></pm-products>\n            <logger-app></logger-app>\n        </div>\n    "
+        template: "\n        <div>\n            <h1>{{pageTitle}}</h1>\n            <pm-products></pm-products>\n        </div>\n    "
     }),
     __metadata("design:paramtypes", [core_2.Logger])
 ], AppComponent);
