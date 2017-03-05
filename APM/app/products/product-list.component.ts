@@ -3,6 +3,7 @@ import {LoggerService} from '../logging/logger-service';
 import {IProduct} from './product';
 import {ProductService}  from './product.service'
 
+
 @Component ({
     selector: 'pm-products',
     moduleId: module.id,
@@ -17,6 +18,7 @@ export class ProductListComponent implements OnInit{
     listFilter : string ;
     showImage: boolean = false;
     products: IProduct[] ;
+    errorMessage: string;
 
     constructor( private logger: LoggerService, private _productService : ProductService) {
     }
@@ -30,7 +32,9 @@ export class ProductListComponent implements OnInit{
     ngOnInit(): void 
     {
         this.logger.log.info('On Init called')
-        this.products = this._productService.getProducts();
+        this._productService.getProducts()
+                            .subscribe(products => this.products = products, 
+                                          error => this.errorMessage = <any>error);
     }
 
     onRatingClicked(message: string){
